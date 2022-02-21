@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import 'animate.css';
 
 @Component({
   selector      : 'app-shopping',
   templateUrl   : './shopping.component.html',
-  styleUrls     : ['./shopping.component.css']
+  styleUrls     : ['./shopping.component.styl']
 })
 export class ShoppingComponent implements OnInit {
 

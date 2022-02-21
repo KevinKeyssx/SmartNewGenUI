@@ -1,0 +1,107 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport="true"
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false">
+    <mat-toolbar class="animate__animated animate__bounceInDown" >Menu 
+      <button
+          type="button"
+          aria-label="Toggle sidenav"
+          mat-icon-button
+          (click)="drawer.toggle()">
+          <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+        </button>
+    </mat-toolbar>
+    <mat-nav-list>
+      <div class="navigation animate__animated animate__bounceInRight">
+        <ul class="font_averox">
+            <li class="list active">
+                <a href="#">
+                    <span class="icon">
+                        <img alt="Home" width="25px" src="https://img.icons8.com/color/48/000000/home.png"/>
+                    </span>
+                    <span class="title">Home</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon">
+                        <img alt="Shopping" width="25px" src="https://img.icons8.com/color/48/000000/shopping-cart--v2.png"/>
+                    </span>
+                    <span class="title">Carrito</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon">
+                        <img alt="Config" width="25px" src="https://img.icons8.com/color/48/000000/gears.png"/>
+                    </span>
+                    <span class="title">Configurar</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon">
+                        <img alt="questions" width="25px" src="https://img.icons8.com/color/48/000000/stackexchange.png"/>
+                    </span>
+                    <span class="title">Ayuda</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon">
+                        <img alt="User" width="25px" src="https://img.icons8.com/color/48/000000/gender-neutral-user.png"/>
+                    </span>
+                    <span class="title">Usuario</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#">
+                    <span class="icon">
+                        <img alt="Disconect" width="25px" src="https://img.icons8.com/color/48/000000/exit.png"/>
+                    </span>
+                    <span class="title">Salir</span>
+                </a>
+            </li>
+        </ul>
+      </div>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar class="main-navbar animate__animated animate__bounceInDown">
+        <button
+          type="button"
+          aria-label="Toggle sidenav"
+          mat-icon-button
+          (click)="drawer.toggle()">
+          <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+        </button>
+        <span>SmartNewGen</span>
+        <span class="example-spacer"></span>
+
+      <div class="form__group field">
+        <input type="input" class="form__field" placeholder="Name" name="name" id='name' required />
+        <label for="name" class="form__label">Busca lo que desees</label>
+      </div>
+
+      <button mat-mini-fab color="primary" aria-label="Example icon button with a menu icon">
+        <mat-icon>menu</mat-icon>
+      </button>
+
+      <button mat-icon-button color="warn" aria-label="Example icon button with a heart icon">
+        <mat-icon>favorite</mat-icon>
+      </button>
+
+      <button mat-mini-fab aria-label="Example icon button with a home icon">
+        <mat-icon>home</mat-icon>
+      </button>
+
+    </mat-toolbar>
+
+    <app-carrousel></app-carrousel>
+
+    <div class="background">
+      <app-shopping></app-shopping>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
