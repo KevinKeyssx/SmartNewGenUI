@@ -16,6 +16,11 @@ import { FooterComponent }                      from './shared/footer/footer.com
 import { MainNavComponent }                     from './shared/main-nav/main-nav.component';
 import { LayoutModule }                         from '@angular/cdk/layout';
 import { CarrouselComponent } from './shared/carrousel/carrousel.component';
+import { CardComponent } from './shared/card/card.component';
+import { CardInfoComponent } from './shared/card-info/card-info.component';
+import { NavSearchComponent } from './shared/nav-search/nav-search.component';
+import { HomeComponent } from './pages/home/home.component';
+import { CategoryCardComponent } from './shared/category-card/category-card.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +30,12 @@ import { CarrouselComponent } from './shared/carrousel/carrousel.component';
     NotFoundComponent,
     FooterComponent,
     MainNavComponent,
-    CarrouselComponent
+    CarrouselComponent,
+    CardComponent,
+    CardInfoComponent,
+    NavSearchComponent,
+    HomeComponent,
+    CategoryCardComponent
   ],
   imports: [
     BrowserModule,

@@ -2,13 +2,11 @@
   <mat-sidenav #drawer class="sidenav" fixedInViewport="true"
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
-      [opened]="(isHandset$ | async) === false">
+      [opened]="false"
+      >
     <mat-toolbar class="animate__animated animate__bounceInDown" >Menu 
-      <button
-          type="button"
-          aria-label="Toggle sidenav"
-          mat-icon-button
-          (click)="drawer.toggle()">
+      <button type="button" aria-label="Toggle sidenav" mat-icon-button
+          (click)="drawer.toggle(); setNavbar()">
           <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
         </button>
     </mat-toolbar>
@@ -73,20 +71,17 @@
           type="button"
           aria-label="Toggle sidenav"
           mat-icon-button
-          (click)="drawer.toggle()">
+          (click)="drawer.toggle(); setNavbar()">
           <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
         </button>
+
         <span>SmartNewGen</span>
         <span class="example-spacer"></span>
 
-      <div class="form__group field">
-        <input type="input" class="form__field" placeholder="Name" name="name" id='name' required />
-        <label for="name" class="form__label">Busca lo que desees</label>
+      <div class="form__group">
+        <input type="input" class="form__field" placeholder="search" name="search" id='search'/>
+        <label for="search" class="form__label">Busca lo que desees</label>
       </div>
-
-      <button mat-mini-fab color="primary" aria-label="Example icon button with a menu icon">
-        <mat-icon>menu</mat-icon>
-      </button>
 
       <button mat-icon-button color="warn" aria-label="Example icon button with a heart icon">
         <mat-icon>favorite</mat-icon>
@@ -96,12 +91,10 @@
         <mat-icon>home</mat-icon>
       </button>
 
+
     </mat-toolbar>
 
-    <app-carrousel></app-carrousel>
-
-    <div class="background">
-      <app-shopping></app-shopping>
-    </div>
+    <!--Add search for types -->
+    <app-nav-search></app-nav-search>
   </mat-sidenav-content>
 </mat-sidenav-container>

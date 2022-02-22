@@ -4,8 +4,9 @@
         <app-main-nav></app-main-nav>
 
         <div [ngClass]="{'container_column': !appService.getNavbar(), 'container_column_no': appService.getNavbar()}">
+            <app-carrousel></app-carrousel>
             <app-card></app-card>
-            <app-category-card></app-category-card>
+            <app-card-info></app-card-info>
             <app-footer></app-footer>
         </div>
     </div>

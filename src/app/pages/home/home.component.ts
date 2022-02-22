@@ -1,13 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import 'animate.css';
 import { AppService } from 'src/app/service/app.service';
 
 @Component({
-  selector      : 'app-shopping',
-  templateUrl   : './shopping.component.html',
-  styleUrls     : ['./shopping.component.styl']
+  selector      : 'app-home',
+  templateUrl   : './home.component.html',
+  styleUrls     : ['./home.component.styl']
 })
-export class ShoppingComponent implements OnInit {
+export class HomeComponent implements OnInit {
 
   constructor(
     public appService: AppService

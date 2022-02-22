@@ -9,7 +9,17 @@ import { Observable }                 from 'rxjs';
 })
 export class AppService {
 
+  private navbar = true;
+
   constructor(private http: HttpClient) { }
+
+  public setNavbar(): void {
+    this.navbar = !this.navbar;
+  }
+
+  public getNavbar(): boolean {
+    return this.navbar;
+  }
 
   public sendRequestApi$(requestData: IRequest): Observable<object> {
     const header = {

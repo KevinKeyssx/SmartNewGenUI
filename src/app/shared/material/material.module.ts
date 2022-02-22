@@ -10,7 +10,8 @@ import { MatCheckboxModule }                                          from '@ang
 import { MatButtonModule }                                            from '@angular/material/button';
 import { MatToolbarModule }                                           from '@angular/material/toolbar';
 import { MatIconModule }                                              from '@angular/material/icon';
-import { MatCardModule } from '@angular/material/card';
+import { MatCardModule }                                              from '@angular/material/card';
+import { MatBadgeModule }                                             from '@angular/material/badge';
 
 
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -32,7 +33,8 @@ const MaterialComponents = [
   MatSidenavModule,
   MatIconModule,
   MatListModule,
-  MatCardModule
+  MatCardModule,
+  MatBadgeModule
   // MomentDateModule,
   // MatMomentDateModule
 ];
