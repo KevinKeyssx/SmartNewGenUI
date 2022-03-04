@@ -1,3 +1,8 @@
+.container
+    margin-top:100px
+    margin-left: 150px
+    width: 80%;
+
 .cards-list
     z-index: 0;
     width: 100%;
@@ -7,9 +12,9 @@
 
 .card
     border 0px
-    margin: 30px auto;
-    width: 120px;
-    height: 100px;
+    margin: 10px auto;
+    width: 150px;
+    height: 150px;
     box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
     cursor: pointer;
     transition: 0.4s;
@@ -17,7 +22,7 @@
 .card .card_image
     width: inherit;
     height: inherit;
-    // background-color: rgb(255, 255, 255)
+    background:#4d5bf9;
 
 .card .card_image img
     width: inherit;
@@ -29,13 +34,11 @@
     font-weight: bold;
     font-size: 15px;
     margin-top: -75px;
-    // height: 40px;
 
 .card:hover
     transform: scale(0.9, 0.9);
     box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
     -5px -5px 30px 15px rgba(0,0,0,0.22);
-
 
 .title-white
     color: white;
@@ -47,7 +50,3 @@
     .card-list
         /* On small screens, we are no longer using row direction but column */
         flex-direction: column;
-
-
-
-

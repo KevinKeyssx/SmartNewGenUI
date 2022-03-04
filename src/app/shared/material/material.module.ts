@@ -12,11 +12,14 @@ import { MatToolbarModule }                                           from '@ang
 import { MatIconModule }                                              from '@angular/material/icon';
 import { MatCardModule }                                              from '@angular/material/card';
 import { MatBadgeModule }                                             from '@angular/material/badge';
+import { MatChipsModule }                                             from '@angular/material/chips';
+import { MatExpansionModule }                                         from '@angular/material/expansion';
+import { MatSidenavModule }                                           from '@angular/material/sidenav';
+import { MatListModule }                                              from '@angular/material/list';
+import { MatSliderModule }                                            from '@angular/material/slider';
+import { MatAutocompleteModule }                                      from '@angular/material/autocomplete';
 
-
-import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatListModule } from '@angular/material/list';
-// import { MatDrawerModule }                                            from '@angular/material/drawer';
+// mat-autocomplete
 
 const MaterialComponents = [
   MatTableModule,
@@ -34,7 +37,11 @@ const MaterialComponents = [
   MatIconModule,
   MatListModule,
   MatCardModule,
-  MatBadgeModule
+  MatBadgeModule,
+  MatChipsModule,
+  MatExpansionModule,
+  MatSliderModule,
+  MatAutocompleteModule
   // MomentDateModule,
   // MatMomentDateModule
 ];
