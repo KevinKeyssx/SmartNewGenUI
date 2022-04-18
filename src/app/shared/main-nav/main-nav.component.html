@@ -15,50 +15,44 @@
         <ul class="font_averox">
             <li class="list active">
                 <a href="#">
-                    <span class="icon">
-                        <img alt="Home" width="25px" src="https://img.icons8.com/color/48/000000/home.png"/>
-                    </span>
-                    <span class="title">Home</span>
+									<i class="fa-solid fa-house icon"></i>
+									<span class="title">Home</span>
                 </a>
             </li>
             <li class="list">
                 <a href="#">
-                    <span class="icon">
-                        <img alt="Shopping" width="25px" src="https://img.icons8.com/color/48/000000/shopping-cart--v2.png"/>
-                    </span>
-                    <span class="title">Carrito</span>
+									<i class="fa-solid fa-cart-shopping icon"></i>
+									<span class="title">Carrito</span>
+                </a>
+            </li>
+						<li class="list">
+							<a href="#">
+								<i class="fa-solid fa-wallet icon"></i>
+								<span class="title">Cartera</span>
+							</a>
+					</li>
+            <li class="list">
+                <a href="#">
+									<i class="fa-solid fa-screwdriver-wrench icon"></i>
+									<span class="title">Configurar</span>
                 </a>
             </li>
             <li class="list">
                 <a href="#">
-                    <span class="icon">
-                        <img alt="Config" width="25px" src="https://img.icons8.com/color/48/000000/gears.png"/>
-                    </span>
-                    <span class="title">Configurar</span>
+									<i class="fa-solid fa-circle-info icon"></i>
+									<span class="title">Ayuda</span>
                 </a>
             </li>
             <li class="list">
                 <a href="#">
-                    <span class="icon">
-                        <img alt="questions" width="25px" src="https://img.icons8.com/color/48/000000/stackexchange.png"/>
-                    </span>
-                    <span class="title">Ayuda</span>
+									<i class="fa-solid fa-user-astronaut icon"></i>
+									<span class="title">Usuario</span>
                 </a>
             </li>
             <li class="list">
                 <a href="#">
-                    <span class="icon">
-                        <img alt="User" width="25px" src="https://img.icons8.com/color/48/000000/gender-neutral-user.png"/>
-                    </span>
-                    <span class="title">Usuario</span>
-                </a>
-            </li>
-            <li class="list">
-                <a href="#">
-                    <span class="icon">
-                        <img alt="Disconect" width="25px" src="https://img.icons8.com/color/48/000000/exit.png"/>
-                    </span>
-                    <span class="title">Salir</span>
+									<i class="fa-solid fa-power-off icon"></i>
+									<span class="title">Salir</span>
                 </a>
             </li>
         </ul>
@@ -83,14 +77,24 @@
         <label for="search" class="form__label">Busca lo que desees</label>
       </div>
 
-      <button mat-icon-button color="warn" aria-label="Example icon button with a heart icon">
-        <mat-icon>favorite</mat-icon>
-      </button>
+			<!-- TODO: agregar los carritos en la pagina de carrito -->
+      <!-- <mat-icon class="icon-show">add_shopping_cart</mat-icon> -->
+      <!-- <mat-icon class="icon-show">remove_shopping_cart</mat-icon> -->
 
-      <button mat-mini-fab aria-label="Example icon button with a home icon">
-        <mat-icon>home</mat-icon>
-      </button>
+      <div class="row justify-content-end">
+        <div class="col-2"><i class="fa-regular fa-heart icon-nav"></i></div>
+        <div class="col-6"><i class="fa-solid fa-cart-shopping icon-nav"></i></div>
 
+        <!-- Desconectado -->
+        <div class="col-2">
+          <h1 style="color:#fff">
+            <span class="icon-nav"><i class="fa-solid fa-right-to-bracket"></i> Log in</span> | <span class="icon-nav">Register</span>
+          </h1>
+        </div>
+        <!-- Conectado -->
+        <!-- <div class="col-1 icon-nav"><h1><i class="fa-solid fa-user-astronaut"></i> Kevin Candia</h1></div> -->
+
+      </div>
 
     </mat-toolbar>
 
