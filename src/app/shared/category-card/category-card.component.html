@@ -1,176 +1,175 @@
 <div class="container">
-    <mat-chip-list aria-label="Fish selection">
-        <mat-chip>One fish</mat-chip>
-        <mat-chip>Two fish</mat-chip>
-        <mat-chip color="primary" selected>Primary fish</mat-chip>
-        <mat-chip color="accent" selected>Accent fish</mat-chip>
-    </mat-chip-list>
-
-    <!-- <mat-form-field class="example-chip-list" appearance="fill"> -->
-    <!-- <mat-label>Favorite Fruits</mat-label> -->
-    <mat-chip-list #chipList aria-label="Fruit selection">
-        <mat-chip *ngFor="let fruit of fruits" (removed)="remove(fruit)">
-          {{fruit.name}}
-          <button matChipRemove>
-              <mat-icon>cancel</mat-icon>
-          </button>
-      </mat-chip>
-      <input placeholder="New fruit..."
-          [matChipInputFor]="chipList"
-          [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
-          [matChipInputAddOnBlur]="addOnBlur"
-          (matChipInputTokenEnd)="add($event)">
-  </mat-chip-list>
-  <!-- </mat-form-field> -->
-    
     <div class="cards-list">
-        
         <div class="card">
-            
-            <div class="card_image"> 
-                <!-- <img src="../../../assets/img/card/blue.jpg" /> -->
-            </div>
+            <div class="card_image"></div>
             <div class="card_title title-white">
                 <p>Card Title</p>
             </div>
         </div>
-        
-        <div class="card 2">
-            <div class="card_image">
-                <!-- <img src="../../../assets/img/logo.jpg" /> -->
-            </div>
+
+        <div class="card">
+            <div class="card_image"></div>
             <div class="card_title title-white">
                 <mat-icon>favorite</mat-icon>
                 <p>Card Title</p>
             </div>
         </div>
-        
-        <div class="card 3">
-            <div class="card_image">
-                <!-- <img src="../../../assets/img/logo.jpg" /> -->
-            </div>
+
+        <div class="card">
+            <div class="card_image"></div>
             <div class="card_title title-white">
                 <p>Card Title</p>
             </div>
         </div>
-        
-        <div class="card 4">
-            <div class="card_image title-white">
-                <!-- <img src="../../../assets/img/logo.jpg" /> -->
-            </div>
+
+        <div class="card">
+            <div class="card_image title-white"></div>
             <div class="card_title title-black">
                 <p>Card Title</p>
             </div>
         </div>
-        
+
         <div class="card">
-            <div class="card_image title-white">
-                <!-- <img src="../../../assets/img/logo.jpg" /> -->
-            </div>
-            <!-- <div class="card_image"> <img src="../../../assets/img/logo.jpg" /> </div> -->
+            <div class="card_image title-white"></div>
             <div class="card_title title-white">
                 <p>Card Title</p>
             </div>
+        </div>
+
+        <div class="card">
+            <div class="card_image"></div>
+            <div class="card_title title-white">
+                <p>Card Title</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_image"></div>
+            <div class="card_title title-white">
+                <p>Card Title</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_image"></div>
+            <div class="card_title title-white">
+                <mat-icon>favorite</mat-icon>
+                <p>Card Title</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_image"></div>
+            <div class="card_title title-white">
+                <p>Card Title</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_image title-white"></div>
+            <div class="card_title title-black">
+                <p>Card Title</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_image title-white"></div>
+            <div class="card_title title-white">
+                <p>Card Title</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_image"></div>
+            <div class="card_title title-white">
+                <p>Card Title</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_image"></div>
+            <div class="card_title title-white">
+                <p>Card Title</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_image"></div>
+            <div class="card_title title-white">
+                <mat-icon>favorite</mat-icon>
+                <p>Card Title</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_image"></div>
+            <div class="card_title title-white">
+                <p>Card Title</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_image title-white"></div>
+            <div class="card_title title-black">
+                <p>Card Title</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_image title-white"></div>
+            <div class="card_title title-white">
+                <p>Card Title</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_image"></div>
+            <div class="card_title title-white">
+                <p>Card Title</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_image"></div>
+            <div class="card_title title-white">
+                <p>Card Title</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_image"></div>
+            <div class="card_title title-white">
+                <mat-icon>favorite</mat-icon>
+                <p>Card Title</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_image"></div>
+            <div class="card_title title-white">
+                <p>Card Title</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_image title-white"></div>
+            <div class="card_title title-black">
+                <p>Card Title</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_image title-white"></div>
+            <div class="card_title title-white">
+                <p>Card Title</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_image"></div>
+            <div class="card_title title-white">
+                <p>Card Title</p>
+            </div>
+        </div>
     </div>
-    
-    <div class="card 2">
-        <div class="card_image">
-            <!-- <img src="../../../assets/img/logo.jpg" /> -->
-        </div>
-        <div class="card_title title-white">
-            <p>Card Title</p>
-        </div>
-    </div>
-    
-    <div class="card 3">
-        <div class="card_image">
-            <!-- <img src="../../../assets/img/logo.jpg" /> -->
-        </div>
-        <div class="card_title">
-            <p>Card Title</p>
-        </div>
-    </div>
-    
-    <div class="card 4">
-        <div class="card_image">
-            <!-- <img src="../../../assets/img/logo.jpg" /> -->
-        </div>
-        <div class="card_title title-black">
-            <p>Card Title</p>
-        </div>
-    </div>
-    
-    <div class="card">
-        <div class="card_image"> 
-            <!-- <img src="../../../assets/img/logo.jpg" />  -->
-        </div>
-        <div class="card_title title-white">
-            <p>Card Title</p>
-        </div>
-    </div>
-    
-    <div class="card 2">
-        <div class="card_image">
-            <!-- <img src="../../../assets/img/logo.jpg" /> -->
-        </div>
-        <div class="card_title title-white">
-            <p>Card Title</p>
-        </div>
-    </div>
-    
-    <div class="card 3">
-        <div class="card_image">
-            <!-- <img src="../../../assets/img/logo.jpg" /> -->
-        </div>
-        <div class="card_title">
-            <p>Card Title</p>
-        </div>
-    </div>
-    
-    <div class="card 4">
-        <div class="card_image">
-            <!-- <img src="../../../assets/img/logo.jpg" /> -->
-        </div>
-        <div class="card_title title-black">
-            <p>Card Title</p>
-        </div>
-    </div>
-    
-    <div class="card">
-        <div class="card_image">
-            <!-- <img src="../../../assets/img/logo.jpg"/> -->
-        </div>
-        <div class="card_title title-white">
-            <p>Card Title</p>
-        </div>
-    </div>
-    
-    <div class="card 2">
-        <div class="card_image">
-            <!-- <img src="../../../assets/img/logo.jpg"/> -->
-        </div>
-        <div class="card_title title-white">
-            <p>Card Title</p>
-        </div>
-    </div>
-    
-    <div class="card 3">
-        <div class="card_image">
-            <!-- <img src="../../../assets/img/logo.jpg" /> -->
-        </div>
-        <div class="card_title">
-            <p>Card Title</p>
-        </div>
-    </div>
-    
-    <div class="card 4">
-        <div class="card_image">
-            <!-- <img src="../../../assets/img/logo.jpg" /> -->
-        </div>
-        <div class="card_title title-black">
-            <p>Card Title</p>
-        </div>
-    </div>
-    
-</div>
 </div>

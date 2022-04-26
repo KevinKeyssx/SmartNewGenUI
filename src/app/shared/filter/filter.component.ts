@@ -30,7 +30,8 @@ export class FilterComponent implements OnInit {
   public min           = 0;
   public step          = 10000;
   public thumbLabel    = true;
-  public value         = 0;
+  public valueMin         = 0;
+  public valueMax         = 0;
   public vertical      = false;
 
   constructor() {

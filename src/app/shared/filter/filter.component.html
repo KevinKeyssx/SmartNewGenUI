@@ -1,128 +1,133 @@
-<div class="container">
 
-    <div class="filter_price">
-        <h2>Filtrar<mat-icon>filter_list</mat-icon></h2>
 
-        <mat-form-field class="slider" appearance="fill">
-            <mat-label>Buscar<mat-icon>search</mat-icon></mat-label>
-            <input matInput placeholder="Marca" value="">
-        </mat-form-field>
+<div class="row">
+    <div class="col-2">
+        <div class="container">
 
-        <hr>
-
-        <mat-form-field class="input_price" appearance="fill">
-            <mat-label>Value</mat-label>
-            <input matInput type="text" [(ngModel)]="value">
-        </mat-form-field>
-
-        <p class="separe_prices">-</p>
-
-        <mat-form-field class="input_price" appearance="fill">
-            <mat-label>Value</mat-label>
-            <input matInput type="text" [(ngModel)]="value">
-        </mat-form-field>
-
-        <mat-slider
-            class="slider"
-            [disabled]="disabled"
-            [invert]="invert"
-            [max]="max"
-            [min]="min"
-            [step]="step"
-            [thumbLabel]="thumbLabel"
-            [(ngModel)]="value"
-            [vertical]="vertical"
-            aria-labelledby="example-name-label">
-        </mat-slider>
-
-        <mat-slider
-            class="slider"
-            [disabled]="disabled"
-            [invert]="!invert"
-            [max]="max"
-            [min]="min"
-            [step]="step"
-            [thumbLabel]="thumbLabel"
-            [(ngModel)]="value"
-            [vertical]="vertical"
-            aria-labelledby="example-name-label">
-        </mat-slider>
-    </div>
-
-    <div class="example-action-buttons">
-        <button mat-button (click)="accordion.openAll()">Expand All</button>
-        <button mat-button (click)="accordion.closeAll()">Collapse All</button>
-    </div>
-    <mat-accordion class="example-headers-align" multi>
-        <mat-expansion-panel class="color">
-            <mat-expansion-panel-header>
-                <mat-panel-title>
-                    Personal data
-                </mat-panel-title>
-            </mat-expansion-panel-header>
-            
-            <mat-form-field appearance="fill">
-                <mat-label>First name</mat-label>
-                <input matInput>
-            </mat-form-field>
-            
-            <mat-form-field appearance="fill">
-                <mat-label>Age</mat-label>
-                <input matInput type="number" min="1">
-            </mat-form-field>
-        </mat-expansion-panel>
+            <div class="filter_price">
+                <h2>Filtrar<mat-icon>filter_list</mat-icon></h2>
         
-        <mat-expansion-panel class="color">
-            <mat-expansion-panel-header>
-                <mat-panel-title>
-                    Personal data
-                </mat-panel-title>
-            </mat-expansion-panel-header>
-
-            <section class="example-section">
-                <mat-checkbox class="example-margin">Check me!</mat-checkbox>
-            </section>
-            <section class="example-section">
-                <mat-checkbox class="example-margin">Check me!</mat-checkbox>
-            </section>
-            <section class="example-section">
-                <mat-checkbox class="example-margin">Check me!</mat-checkbox>
-            </section>
-            <section class="example-section">
-                <mat-checkbox class="example-margin">Check me!</mat-checkbox>
-            </section>
-            <section class="example-section">
-                <mat-checkbox class="example-margin">Check me!</mat-checkbox>
-            </section>
-
-        </mat-expansion-panel>
-    </mat-accordion>
+                <mat-form-field class="input_price" appearance="fill">
+                    <mat-label>Value</mat-label>
+                    <input matInput type="text" [(ngModel)]="valueMin">
+                </mat-form-field>
+        
+                <p class="separe_prices"> - </p>
+        
+                <mat-form-field class="input_price" appearance="fill">
+                    <mat-label>Value</mat-label>
+                    <input matInput type="text" [(ngModel)]="valueMax">
+                </mat-form-field>
+        
+                <mat-slider
+                    class="slider"
+                    [disabled]="disabled"
+                    [invert]="invert"
+                    [max]="valueMax"
+                    [min]="min"
+                    [step]="step"
+                    [thumbLabel]="thumbLabel"
+                    [(ngModel)]="valueMin"
+                    [vertical]="vertical"
+                    aria-labelledby="example-name-label">
+                </mat-slider>
+        
+                <mat-slider
+                    class="slider"
+                    [disabled]="disabled"
+                    [invert]="!invert"
+                    [max]="max"
+                    [min]="valueMin"
+                    [step]="step"
+                    [thumbLabel]="thumbLabel"
+                    [(ngModel)]="valueMax"
+                    [vertical]="vertical"
+                    aria-labelledby="example-name-label">
+                </mat-slider>
+            </div>
+        
+            <button mat-button (click)="accordion.openAll()"><i class="fa-solid fa-chevron-down"></i></button>
+            <button mat-button (click)="accordion.closeAll()"><i class="fa-solid fa-chevron-up"></i></button>
+        
+            <mat-accordion multi>
+                <mat-expansion-panel class="color">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Personal data
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    
+                    <mat-form-field appearance="fill">
+                        <mat-label>First name</mat-label>
+                        <input matInput>
+                    </mat-form-field>
+                    
+                    <mat-form-field appearance="fill">
+                        <mat-label>Age</mat-label>
+                        <input matInput type="number" min="1">
+                    </mat-form-field>
+                </mat-expansion-panel>
+                
+                <mat-expansion-panel class="color">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            Personal data
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+        
+                    <section class="example-section">
+                        <mat-checkbox class="example-margin">Check me!</mat-checkbox>
+                    </section>
+                    <section class="example-section">
+                        <mat-checkbox class="example-margin">Check me!</mat-checkbox>
+                    </section>
+                    <section class="example-section">
+                        <mat-checkbox class="example-margin">Check me!</mat-checkbox>
+                    </section>
+                    <section class="example-section">
+                        <mat-checkbox class="example-margin">Check me!</mat-checkbox>
+                    </section>
+                    <section class="example-section">
+                        <mat-checkbox class="example-margin">Check me!</mat-checkbox>
+                    </section>
+        
+                </mat-expansion-panel>
+            </mat-accordion>
+        </div>  
+    </div>
+    <div class="col-9">
+        <mat-form-field class="example-chip-list slider in_block" appearance="fill">
+            <mat-label>Busca lo que desees</mat-label>
+            <mat-chip-list #chipList aria-label="Fruit selection">
+                <mat-chip
+                    *ngFor="let fruit of fruits"
+                    (removed)="remove(fruit)">
+                    {{fruit}}
+                    <button matChipRemove>
+                    <mat-icon>cancel</mat-icon>
+                    </button>
+                </mat-chip>
+                <input
+                    placeholder="Algo..."
+                    #fruitInput
+                    [formControl]="fruitCtrl"
+                    [matAutocomplete]="auto"
+                    [matChipInputFor]="chipList"
+                    [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+                    (matChipInputTokenEnd)="add($event)">
+            </mat-chip-list>
+        
+            <mat-autocomplete #auto="matAutocomplete" (optionSelected)="selected($event)">
+                <mat-option *ngFor="let frui of filteredFruits | async" [value]="frui">
+                    {{frui}}
+                </mat-option>
+            </mat-autocomplete>
+        </mat-form-field>
+        
+    </div>
 </div>
 
-<mat-form-field class="example-chip-list slider in_block" appearance="fill">
-    <mat-label>Favorite Fruits</mat-label>
-    <mat-chip-list #chipList aria-label="Fruit selection">
-        <mat-chip
-            *ngFor="let fruit of fruits"
-            (removed)="remove(fruit)">
-            {{fruit}}
-            <button matChipRemove>
-            <mat-icon>cancel</mat-icon>
-            </button>
-        </mat-chip>
-        <input
-            placeholder="New fruit..."
-            #fruitInput
-            [formControl]="fruitCtrl"
-            [matAutocomplete]="auto"
-            [matChipInputFor]="chipList"
-            [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
-            (matChipInputTokenEnd)="add($event)">
-    </mat-chip-list>
 
-    <mat-autocomplete #auto="matAutocomplete" (optionSelected)="selected($event)">
-        <mat-option *ngFor="let fruit of filteredFruits | async" [value]="fruit">
-            {{fruit}}
-        </mat-option>
-    </mat-autocomplete>
-</mat-form-field>
+
+
+
